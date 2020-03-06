@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+# Welcome to my blog
+date: 03/06/2020 (mm/dd/yyyy)
 
-You can use the [editor on GitHub](https://github.com/ptsang1/r_ggplot2_library.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+author: Phung Thanh Sang (hwngs)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Introduction
+- This blog is going to talk about ggplot2 library in R.
+- All things below here which I was taught from the visualization course of edX.
+- [Here is link of the course](https://www.edx.org/course/data-science-visualization)
+- Now, let's get started.
 
-### Markdown
+## Content
+### What is the ggplot2 library?
+- The ggplot2 library is one of the greatest tools in R where is going to support you in visualizing data.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How can we use it?
+#### Install
+- The first thing you need to guarantee that you did install it.
+- To install the ggplot2 library in your R. We just type the code in your R console:
+```
+install.package(ggplot2)
+```
+- How can we check it installed? We have 2 ways to check it:
 
-```markdown
-Syntax highlighted code block
+**1. Check from installed list:**\
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+installed.packages()
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**2. Load it (prefer):**
 
-### Jekyll Themes
+```
+library(ggplot2)
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ptsang1/r_ggplot2_library.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Why did I prefer the 2nd way? Because of using the 1st way, you are going to recieve the very long list like this:
+#### Load
+- To load the package we just type the code:
+```
+library(ggplot2)
+```
+#### How to visualize data with ggplot2
+**1. We need to determine the components in your graph:**
+- Data: The US murders data table is being summarized. We refer to this as the data component.
+- Geometry: The type of your graph. The possible geometries are scatterplot, barplot, histogram, smooth densities, qqplot, and boxplot.
+- Aesthetic mapping: This is the part in which we tell ggplot2 how to visualize our data. Such as which x-axis, y-axis is?, what is color used?,...
 
-### Support or Contact
+![Image](https://github.com/ptsang1/r_ggplot2_library.io/blob/master/image.png)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
